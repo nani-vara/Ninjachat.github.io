@@ -820,7 +820,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script>
+      setTimeout(function(){ 
+        (function(n, j, c, h, a, t) {
+      d= j.createElement('div');
+      d.id= 'app';
+      t = j.getElementsByTagName('head')[0];
+      a = j.createElement('script');
+      a.async = 1;
+      a.id= 'ninjachat';
+      a.src = c + h;
+      a.onload = function(){
+          n._NC.init('3799017286209294','51','qa')
+    };
+    j.lastChild.append(d);
+    t.appendChild(a);
+    })(window, document, 'https://widgets.500apps.com/qa/ninjachat/', 'ninjachat.js');
+    },2000);
+    </script>
 </body>
 
 </html>
